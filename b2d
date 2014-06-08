@@ -1,0 +1,9 @@
+def BinaryConverter(num):
+  strin=str(num)
+  lengt=len(strin)-1
+  resul=0
+  for jerry in strin:
+    if jerry=='1':
+      resul+=2**lengt
+    lengt-=1
+  return resul

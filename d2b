@@ -1,0 +1,27 @@
+blank=''
+for jerry in range(5):
+  blank+='\n'
+print blank
+a=raw_input("Enter a positive integer:")
+def DecimalConverter(num):
+  if num=='protuberance':
+    return blank+'touch it'
+  else:
+    num=int(num)
+    power=0
+    numb=num
+    while num>1 or num==1:
+      num=num/2
+      power+=1
+    binary=[]
+    for jerry in range(power):
+      binary+='0'
+    for jerry in range(power):
+      if numb-2**(power-jerry-1)>0 or numb-2**(power-jerry-1)==0:
+        binary[jerry]='1'
+        numb-=2**(power-jerry-1)
+    strin=''
+    for jerry in binary:
+      strin+=jerry
+    return blank+a+' in binary is: \n'+strin+blank
+print DecimalConverter(a)

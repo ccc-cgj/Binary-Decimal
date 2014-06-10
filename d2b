@@ -1,8 +1,8 @@
 blank=''
 for jerry in range(5):
   blank+='\n'
-print blank
-a=raw_input("Enter a positive integer:")
+print(blank)
+a=input("Enter a positive integer:")
 def DecimalConverter(num):
   if num=='protuberance':
     return blank+'touch it'
@@ -24,4 +24,4 @@ def DecimalConverter(num):
     for jerry in binary:
       strin+=jerry
     return blank+a+' in binary is: \n'+strin+blank
-print DecimalConverter(a)
+print(DecimalConverter(a))

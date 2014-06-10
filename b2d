@@ -1,3 +1,4 @@
+a=input('Enter a binary number:')
 def BinaryConverter(num):
   strin=str(num)
   lengt=len(strin)-1
@@ -7,3 +8,4 @@ def BinaryConverter(num):
       resul+=2**lengt
     lengt-=1
   return resul
+print(BinaryConverter(a))

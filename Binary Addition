@@ -1,0 +1,44 @@
+def BinaryConverter(num):
+  strin=str(num)
+  lengt=len(strin)-1
+  resul=0
+  for jerry in strin:
+    if jerry=='1':
+      resul+=2**lengt
+    lengt-=1
+  return resul
+
+def DecimalConverter(num):
+  if num=='protuberance':
+    return blank+'touch it'
+  else:
+    num=int(num)
+    power=0
+    numb=num
+    while num>1 or num==1:
+      num=num/2
+      power+=1
+    binary=[]
+    for jerry in range(power):
+      binary+='0'
+    for jerry in range(power):
+      if numb-2**(power-jerry-1)>0 or numb-2**(power-jerry-1)==0:
+        binary[jerry]='1'
+        numb-=2**(power-jerry-1)
+    strin=''
+    for jerry in binary:
+      strin+=jerry
+    return strin
+
+blank=''
+for jerry in range(5):
+  blank+='\n'
+print(blank)
+a=input('Enter one binary addend:\n')
+b=input('Enter another binary addend:\n')
+print(blank)
+print('The sum in binary is:')
+print(DecimalConverter(str(BinaryConverter(a)+BinaryConverter(b))))
+print('in decimal:')
+print(str(BinaryConverter(a)+BinaryConverter(b)))
+print(blank)
